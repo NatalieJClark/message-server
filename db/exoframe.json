@@ -1,0 +1,10 @@
+{
+    "name": "natalieclark-message-database",
+    "domain": false,
+    "hostname": "natalieclark-message-database",
+    "image": "postgres:12",
+    "env": {
+      "POSTGRES_PASSWORD": "@natalieclark-postgres-password"
+    },
+    "volumes": ["natalieclark_message_database_volume:/var/lib/postgresql/data"]
+  }
